@@ -51,47 +51,62 @@ Error generating stack: `+e.message+`
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const bv=f=>f.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),pv=f=>f.replace(/^([A-Z])|[\s-_]+(\w)/g,(S,y,s)=>s?s.toUpperCase():y.toLowerCase()),jd=f=>{const S=pv(f);return S.charAt(0).toUpperCase()+S.slice(1)},Jd=(...f)=>f.filter((S,y,s)=>!!S&&S.trim()!==""&&s.indexOf(S)===y).join(" ").trim(),Sv=f=>{for(const S in f)if(S.startsWith("aria-")||S==="role"||S==="title")return!0};/**
- * @license lucide-react v0.510.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */var Av={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
- * @license lucide-react v0.510.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const Tv=il.forwardRef(({color:f="currentColor",size:S=24,strokeWidth:y=2,absoluteStrokeWidth:s,className:x="",children:_,iconNode:U,...Q},M)=>il.createElement("svg",{ref:M,...Av,width:S,height:S,stroke:f,strokeWidth:s?Number(y)*24/Number(S):y,className:Jd("lucide",x),...!_&&!Sv(Q)&&{"aria-hidden":"true"},...Q},[...U.map(([p,N])=>il.createElement(p,N)),...Array.isArray(_)?_:[_]]));/**
- * @license lucide-react v0.510.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const Wn=(f,S)=>{const y=il.forwardRef(({className:s,...x},_)=>il.createElement(Tv,{ref:_,iconNode:S,className:Jd(`lucide-${bv(jd(f))}`,`lucide-${f}`,s),...x}));return y.displayName=jd(f),y};/**
- * @license lucide-react v0.510.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const xv=[["rect",{x:"14",y:"4",width:"4",height:"16",rx:"1",key:"zuxfzm"}],["rect",{x:"6",y:"4",width:"4",height:"16",rx:"1",key:"1okwgv"}]],Ev=Wn("pause",xv);/**
- * @license lucide-react v0.510.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const zv=[["polygon",{points:"6 3 20 12 6 21 6 3",key:"1oa8hb"}]],Mv=Wn("play",zv);/**
- * @license lucide-react v0.510.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const Ov=[["path",{d:"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",key:"uqj9uw"}],["path",{d:"M16 9a5 5 0 0 1 0 6",key:"1q6k2b"}],["path",{d:"M19.364 18.364a9 9 0 0 0 0-12.728",key:"ijwkga"}]],_v=Wn("volume-2",Ov);/**
- * @license lucide-react v0.510.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const Rv=[["path",{d:"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",key:"uqj9uw"}],["line",{x1:"22",x2:"16",y1:"9",y2:"15",key:"1ewh16"}],["line",{x1:"16",x2:"22",y1:"9",y2:"15",key:"5ykzw1"}]],Dv=Wn("volume-x",Rv),Nv="/a-matrix/assets/clubbed_to_death-ZaIjTtTx.mp3";function Uv(){const[f,S]=il.useState(!1),[y,s]=il.useState(null),[x,_]=il.useState(""),[U,Q]=il.useState(!1),[M,p]=il.useState(!1),[N,$]=il.useState(.3),F=il.useRef(null),rl=il.useRef(null);il.useEffect(()=>{const Z=F.current;if(!Z)return;const K=Z.getContext("2d");Z.width=window.innerWidth,Z.height=window.innerHeight;const k="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),dl=16,Ol=Z.width/dl,X=[];for(let fl=0;fl<Ol;fl++)X[fl]=1;function Dl(){K.fillStyle="rgba(0, 0, 0, 0.04)",K.fillRect(0,0,Z.width,Z.height),K.fillStyle="#00ff41",K.font=dl+"px monospace";for(let fl=0;fl<X.length;fl++){const ht=k[Math.floor(Math.random()*k.length)];K.fillText(ht,fl*dl,X[fl]*dl),X[fl]*dl>Z.height&&Math.random()>.975&&(X[fl]=0),X[fl]++}}const Et=setInterval(Dl,35),Fl=()=>{Z.width=window.innerWidth,Z.height=window.innerHeight};return window.addEventListener("resize",Fl),()=>{clearInterval(Et),window.removeEventListener("resize",Fl)}},[]),il.useEffect(()=>{const Z=rl.current;if(!Z)return;Z.volume=N,Z.loop=!0;const K=()=>{f&&Z.play().then(()=>{Q(!0)}).catch(vl=>{console.log("Auto-play prevented:",vl)})};return Z.addEventListener("canplaythrough",K),()=>{Z.removeEventListener("canplaythrough",K)}},[f,N]),il.useEffect(()=>{const Z=setTimeout(()=>{S(!0),rl.current&&rl.current.play().then(()=>{Q(!0)}).catch(K=>{console.log("Auto-play prevented:",K)})},2e3);return()=>clearTimeout(Z)},[]),il.useEffect(()=>{if(!f)return;const Z=["Acorde, Neo...","A Matrix te pegou...","Siga o coelho branco.","Toc, Toc, Neo."];let K=0,vl=0,k="";const dl=()=>{K<Z.length&&(vl<Z[K].length?(k+=Z[K][vl],_(k),vl++,setTimeout(dl,100)):setTimeout(()=>{k+=`
-`,_(k),K++,vl=0,setTimeout(dl,1e3)},2e3))},Ol=setTimeout(dl,1e3);return()=>clearTimeout(Ol)},[f]);const cl=Z=>{s(Z),_(Z==="red"?K=>K+`
+ /*const bv=f=>f.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),pv=f=>f.replace(/^([A-Z])|[\s-_]+(\w)/g,(S,y,s)=>s?s.toUpperCase():y.toLowerCase()),jd=f=>{const S=pv(f);return S.charAt(0).toUpperCase()+S.slice(1)},Jd=(...f)=>f.filter((S,y,s)=>!!S&&S.trim()!==""&&s.indexOf(S)===y).join(" ").trim(),Sv=f=>{for(const S in f)if(S.startsWith("aria-")||S==="role"||S==="title")return!0};/**
+ * @license lucide-react v0.510.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var Av={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.510.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const Tv=il.forwardRef(({color:f="currentColor",size:S=24,strokeWidth:y=2,absoluteStrokeWidth:s,className:x="",children:_,iconNode:U,...Q},M)=>il.createElement("svg",{ref:M,...Av,width:S,height:S,stroke:f,strokeWidth:s?Number(y)*24/Number(S):y,className:Jd("lucide",x),...!_&&!Sv(Q)&&{"aria-hidden":"true"},...Q},[...U.map(([p,N])=>il.createElement(p,N)),...Array.isArray(_)?_:[_]]));/**
+ * @license lucide-react v0.510.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const Wn=(f,S)=>{const y=il.forwardRef(({className:s,...x},_)=>il.createElement(Tv,{ref:_,iconNode:S,className:Jd(`lucide-${bv(jd(f))}`,`lucide-${f}`,s),...x}));return y.displayName=jd(f),y};/**
+ * @license lucide-react v0.510.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const xv=[["rect",{x:"14",y:"4",width:"4",height:"16",rx:"1",key:"zuxfzm"}],["rect",{x:"6",y:"4",width:"4",height:"16",rx:"1",key:"1okwgv"}]],Ev=Wn("pause",xv);/**
+ * @license lucide-react v0.510.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const zv=[["polygon",{points:"6 3 20 12 6 21 6 3",key:"1oa8hb"}]],Mv=Wn("play",zv);/**
+ * @license lucide-react v0.510.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const Ov=[["path",{d:"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",key:"uqj9uw"}],["path",{d:"M16 9a5 5 0 0 1 0 6",key:"1q6k2b"}],["path",{d:"M19.364 18.364a9 9 0 0 0 0-12.728",key:"ijwkga"}]],_v=Wn("volume-2",Ov);/**
+ * @license lucide-react v0.510.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const Rv=[["path",{d:"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",key:"uqj9uw"}],["line",{x1:"22",x2:"16",y1:"9",y2:"15",key:"1ewh16"}],["line",{x1:"16",x2:"22",y1:"9",y2:"15",key:"5ykzw1"}]],Dv=Wn("volume-x",Rv),Nv="/a-matrix/assets/clubbed_to_death-ZaIjTtTx.mp3";function Uv(){const[f,S]=il.useState(!1),[y,s]=il.useState(null),[x,_]=il.useState(""),[U,Q]=il.useState(!1),[M,p]=il.useState(!1),[N,$]=il.useState(.3),F=il.useRef(null),rl=il.useRef(null);il.useEffect(()=>{const Z=F.current;if(!Z)return;const K=Z.getContext("2d");Z.width=window.innerWidth,Z.height=window.innerHeight;const k="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),dl=16,Ol=Z.width/dl,X=[];for(let fl=0;fl<Ol;fl++)X[fl]=1;function Dl(){K.fillStyle="rgba(0, 0, 0, 0.04)",K.fillRect(0,0,Z.width,Z.height),K.fillStyle="#00ff41",K.font=dl+"px monospace";for(let fl=0;fl<X.length;fl++){const ht=k[Math.floor(Math.random()*k.length)];K.fillText(ht,fl*dl,X[fl]*dl),X[fl]*dl>Z.height&&Math.random()>.975&&(X[fl]=0),X[fl]++}}const Et=setInterval(Dl,35),Fl=()=>{Z.width=window.innerWidth,Z.height=window.innerHeight};return window.addEventListener("resize",Fl),()=>{clearInterval(Et),window.removeEventListener("resize",Fl)}},[]),il.useEffect(()=>{const Z=rl.current;if(!Z)return;Z.volume=N,Z.loop=!0;const K=()=>{f&&Z.play().then(()=>{Q(!0)}).catch(vl=>{console.log("Auto-play prevented:",vl)})};return Z.addEventListener("canplaythrough",K),()=>{Z.removeEventListener("canplaythrough",K)}},[f,N]),il.useEffect(()=>{const Z=setTimeout(()=>{S(!0),rl.current&&rl.current.play().then(()=>{Q(!0)}).catch(K=>{console.log("Auto-play prevented:",K)})},2e3);return()=>clearTimeout(Z)},[]),il.useEffect(()=>{if(!f)return;const Z=["Acorde, Neo...","A Matrix te pegou...","Siga o coelho branco.","Toc, Toc, Neo."];let K=0,vl=0,k="";const dl=()=>{K<Z.length&&(vl<Z[K].length?(k+=Z[K][vl],_(k),vl++,setTimeout(dl,100)):setTimeout(()=>{k+=`
+`,_(k),K++,vl=0,setTimeout(dl,1e3)},2e3))},Ol=setTimeout(dl,1e3);return()=>clearTimeout(Ol)},[f]);const cl=Z=>{
+    s(Z);
+    _(Z==="red"
+        ? K=>K+`
 Você escolheu a pílula vermelha...
 Bem vindo ao mundo real.
-A verdade vai te libertar.`:K=>K+`
+A verdade vai te libertar.`
+        : K=>K+`
 Você escolheu a pílula azul...
 A história termina aqui.
-Você acorda na sua cama e acredita no que quiser acreditar.`)},bl=()=>{const Z=rl.current;Z&&(U?(Z.pause(),Q(!1)):Z.play().then(()=>{Q(!0)}).catch(K=>{console.log("Play failed:",K)}))},Tl=()=>{const Z=rl.current;Z&&(M?(Z.volume=N,p(!1)):(Z.volume=0,p(!0)))},wl=Z=>{const K=parseFloat(Z.target.value);$(K);const vl=rl.current;vl&&!M&&(vl.volume=K)};return j.jsxs("div",{className:"matrix-app",children:[j.jsx("audio",{ref:rl,src:Nv,preload:"auto"}),j.jsxs("div",{className:"audio-controls",children:[j.jsx("button",{className:"audio-button",onClick:bl,title:U?"Pause":"Play",children:U?j.jsx(Ev,{size:20}):j.jsx(Mv,{size:20})}),j.jsx("button",{className:"audio-button",onClick:Tl,title:M?"Unmute":"Mute",children:M?j.jsx(Dv,{size:20}):j.jsx(_v,{size:20})}),j.jsx("input",{type:"range",min:"0",max:"1",step:"0.1",value:N,onChange:wl,className:"volume-slider",title:"Volume"}),j.jsx("div",{className:"audio-info",children:j.jsx("span",{className:"audio-title",children:"Clubbed to Death"})})]}),j.jsx("canvas",{ref:F,className:"matrix-canvas"}),j.jsx("div",{className:"matrix-content",children:f?j.jsxs("div",{className:"main-interface",children:[j.jsxs("header",{className:"matrix-header",children:[j.jsx("h1",{className:"matrix-title glitch","data-text":"A MATRIX",children:"A MATRIX"}),j.jsx("p",{className:"matrix-subtitle",children:"Bem Vindo ao Mundo Real"})]}),j.jsxs("div",{className:"matrix-controls",children:[j.jsx(Hd,{className:`matrix-button red-pill ${y==="red"?"selected":""}`,onClick:()=>cl("red"),disabled:y!==null,children:"Pegue a Pílula Vermelha"}),j.jsx(Hd,{className:`matrix-button blue-pill ${y==="blue"?"selected":""}`,onClick:()=>cl("azul"),disabled:y!==null,children:"Pegue a Pílula Azul"})]}),j.jsxs("div",{className:"matrix-terminal",children:[j.jsxs("div",{className:"terminal-header",children:[j.jsx("span",{className:"terminal-title",children:"TERMINAL"}),j.jsxs("div",{className:"terminal-controls",children:[j.jsx("span",{className:"control-dot red"}),j.jsx("span",{className:"control-dot yellow"}),j.jsx("span",{className:"control-dot green"})]})]}),j.jsxs("div",{className:"terminal-content",children:[j.jsx("div",{className:"terminal-line",children:j.jsx("span",{className:"prompt",children:"neo@matrix:~$"})}),j.jsx("div",{className:"terminal-output",children:x.split(`
+Você acorda na sua cama e acredita no que quiser acreditar.`
+    );
+
+    // Adiciona o redirecionamento após um atraso para a pílula azul
+    if (Z === "azul") {
+        setTimeout(() => {
+            window.location.href = "https://www.youtube.com/watch?v=8iY66B5NB2w";
+        }, 5000); // Redireciona após 5 segundos (5000 milissegundos)
+    }
+};
+
+const bl=()=>{const Z=rl.current;Z&&(U?(Z.pause(),Q(!1)):Z.play().then(()=>{Q(!0)}).catch(K=>{console.log("Play failed:",K)}))},Tl=()=>{const Z=rl.current;Z&&(M?(Z.volume=N,p(!1)):(Z.volume=0,p(!0)))},wl=Z=>{const K=parseFloat(Z.target.value);$(K);const vl=rl.current;vl&&!M&&(vl.volume=K)};return j.jsxs("div",{className:"matrix-app",children:[j.jsx("audio",{ref:rl,src:Nv,preload:"auto"}),j.jsxs("div",{className:"audio-controls",children:[j.jsx("button",{className:"audio-button",onClick:bl,title:U?"Pause":"Play",children:U?j.jsx(Ev,{size:20}):j.jsx(Mv,{size:20})}),j.jsx("button",{className:"audio-button",onClick:Tl,title:M?"Unmute":"Mute",children:M?j.jsx(Dv,{size:20}):j.jsx(_v,{size:20})}),j.jsx("input",{type:"range",min:"0",max:"1",step:"0.1",value:N,onChange:wl,className:"volume-slider",title:"Volume"}),j.jsx("div",{className:"audio-info",children:j.jsx("span",{className:"audio-title",children:"Clubbed to Death"})})]}),j.jsx("canvas",{ref:F,className:"matrix-canvas"}),j.jsx("div",{className:"matrix-content",children:f?j.jsxs("div",{className:"main-interface",children:[j.jsxs("header",{className:"matrix-header",children:[j.jsx("h1",{className:"matrix-title glitch","data-text":"A MATRIX",children:"A MATRIX"}),j.jsx("p",{className:"matrix-subtitle",children:"Bem Vindo ao Mundo Real"})]}),j.jsxs("div",{className:"matrix-controls",children:[j.jsx(Hd,{className:`matrix-button red-pill ${y==="red"?"selected":""}`,onClick:()=>cl("red"),disabled:y!==null,children:"Pegue a Pílula Vermelha"}),j.jsx(Hd,{className:`matrix-button blue-pill ${y==="blue"?"selected":""}`,onClick:()=>cl("azul"),disabled:y!==null,children:"Pegue a Pílula Azul"})]}),j.jsxs("div",{className:"matrix-terminal",children:[j.jsxs("div",{className:"terminal-header",children:[j.jsx("span",{className:"terminal-title",children:"TERMINAL"}),j.jsxs("div",{className:"terminal-controls",children:[j.jsx("span",{className:"control-dot red"}),j.jsx("span",{className:"control-dot yellow"}),j.jsx("span",{className:"control-dot green"})]})]}),j.jsxs("div",{className:"terminal-content",children:[j.jsx("div",{className:"terminal-line",children:j.jsx("span",{className:"prompt",children:"neo@matrix:~$"})}),j.jsx("div",{className:"terminal-output",children:x.split(`
 `).map((Z,K)=>j.jsx("div",{className:"terminal-message",children:Z},K))}),j.jsx("div",{className:"terminal-line",children:j.jsx("span",{className:"cursor",children:"_"})})]})]}),j.jsx("div",{className:"matrix-info",children:j.jsxs("div",{className:"info-panel",children:[j.jsx("h3",{children:"Status de Sistema"}),j.jsxs("div",{className:"status-item",children:[j.jsx("span",{className:"status-label",children:"Conexão:"}),j.jsx("span",{className:"status-value connected",children:"ATIVA"})]}),j.jsxs("div",{className:"status-item",children:[j.jsx("span",{className:"status-label",children:"Level de Realidade:"}),j.jsx("span",{className:"status-value",children:"SIMULAÇÃO"})]}),j.jsxs("div",{className:"status-item",children:[j.jsx("span",{className:"status-label",children:"Agentes:"}),j.jsx("span",{className:"status-value warning",children:"DETECTADOS"})]}),j.jsxs("div",{className:"status-item",children:[j.jsx("span",{className:"status-label",children:"Status da Pílula:"}),j.jsx("span",{className:`status-value ${y?"selected":""}`,children:y?y.toUpperCase():"AGUARDANDO"})]}),j.jsxs("div",{className:"status-item",children:[j.jsx("span",{className:"status-label",children:"Audio:"}),j.jsx("span",{className:`status-value ${U?"connected":""}`,children:U?"RODANDO":"PAUSADO"})]})]})}),y&&j.jsx("div",{className:"matrix-revelation",children:j.jsx("div",{className:"revelation-text",children:y==="red"?j.jsxs(j.Fragment,{children:[j.jsx("h2",{children:"Verdade Revelada"}),j.jsx("p",{children:"Você escolheu ver o quão fundo a toca de coelho vai..."})]}):j.jsxs(j.Fragment,{children:[j.jsx("h2",{children:"De volta ao sono"}),j.jsx("p",{children:"A ignorância é uma benção... O Sonho continua."})]})})})]}):j.jsxs("div",{className:"loading-screen",children:[j.jsx("div",{className:"loading-text",children:j.jsx("span",{className:"glitch","data-text":"INICIALIZANDO A MATRIX...",children:"INICIALIZANDO A MATRIX..."})}),j.jsx("div",{className:"loading-bar",children:j.jsx("div",{className:"loading-progress"})}),j.jsxs("div",{className:"loading-details",children:[j.jsx("div",{className:"loading-line",children:"Carregando vias neurais..."}),j.jsx("div",{className:"loading-line",children:"Estabelecendo conexão..."}),j.jsx("div",{className:"loading-line",children:"Transpassando protocolos de segurança..."}),j.jsx("div",{className:"loading-line",children:"Carregando trilha sonora..."})]})]})})]})}z0.createRoot(document.getElementById("root")).render(j.jsx(il.StrictMode,{children:j.jsx(Uv,{})}));
